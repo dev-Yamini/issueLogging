@@ -1,0 +1,36 @@
+{ 
+	"entryPoint": [
+		{ 
+			"criteriaName": "primary_dnis",
+			"criteriaValue": [
+				{
+					"value": "18006000600",
+					"query": "FIND %ANI% in PHONE fields and %AccountNumber% in Account Number field Returning"
+				},
+				{
+					"value": "18007000700",
+					"query": "FIND %ANI% in PHONE fields Returning...."
+				},
+				{
+					"value": "*",
+					"query": "FIND %ANI% in PHONE fields Returning...."
+				}			
+			],
+			"action_on_failure": "createLead"
+		},
+		{ 
+			"criteriaName": "toAddress",
+			"criteriaValue": [
+				{
+					"value": "sales@tesla.com",
+					"query": "FIND %fromAddress% in Email field RETURNING"
+				},
+				{
+					"value": "service@tesla.com",
+					"query": "FIND %ANI% in PHONE fields and %CaseId% in Case fields RETURNING...."
+				}
+			],
+			"action_on_failure": "createCase"
+		}
+	]
+}

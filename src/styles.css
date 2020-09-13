@@ -1,0 +1,114 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+html, body { height: 100%; }
+body {     
+  font-family: "Open Sans", sans-serif;
+  background: #a3d2ca;
+  color: #fff;
+}
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+}
+  
+  #hero:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  #hero .container {
+    padding-top: 110px;
+  }
+  
+  #hero h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  #hero h1 span {
+    color: #cda45e;
+  }
+  
+  #hero h2 {
+    color: #eee;
+    margin-bottom: 10px 0 0 0;
+    font-size: 22px;
+  }
+  
+  #hero .btns {
+    margin-top: 30px;
+  }
+  
+  #hero .btn-menu, #hero .btn-book {
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: 0.3s;
+    line-height: 1;
+    color: white;
+    border: 2px solid #cda45e;
+  }
+  
+  #hero .btn-menu:hover, #hero .btn-book:hover {
+    background: #cda45e;
+    color: #fff;
+  }
+  
+  #hero .btn-book {
+    margin-left: 15px;
+  }
+  
+.box-click {
+  margin: 50px 50px;
+  background: #cda45e;
+  width: 94px;
+  height: 94px;
+  position: relative;
+  overflow: hidden;
+}
+
+.box-click:hover {
+  -webkit-transform: rotate(360deg);
+  background: #fff;
+  border-radius: 50%;
+}
+
+.rotate {
+  -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.rotate:hover {
+  -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.displayData-header{
+    font-family: "Playfair Display", serif !important;
+    font-size: 35px !important;
+    font-weight: 500 !important;
+}
+
+
+

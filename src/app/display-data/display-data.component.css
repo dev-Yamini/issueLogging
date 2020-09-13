@@ -1,0 +1,23 @@
+.display-data{
+    margin: 20px;
+    text-align: center;
+}
+
+.display-data h1{
+
+    margin-left: 80px;
+}
+
+.Card_mainContainer{
+    margin:20px 580px;
+}
+
+.form-control{
+    text-align: center;
+    margin: 0 500px;
+    width: 30%;
+}
+.timeEstimate{
+    margin-top: 10px;
+    margin-left: 80px;
+}

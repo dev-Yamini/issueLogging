@@ -1,0 +1,22 @@
+<div class="display-data">
+
+    <header>
+        <h1>Issue Request Log</h1>
+    </header>
+
+    <input type="text" class="form-control" placeholder="Search box" [(ngModel)]="filteredStatus">
+    <h3 class="timeEstimate">Time Estimate: {{theSum}} </h3>
+    <div class="Card_mainContainer" *ngFor="let criteria of products | filter:filteredStatus:'Description':'created_at': 'TimeEstimate' ">
+        <div class="card" style="width: 18rem; background: black;">
+            <div class="card-body">
+              <h3 class="card-title">Issue : {{criteria.Title}}</h3>
+              <p class="card-text">Description : {{criteria.Description}}</p>
+              <br>
+              <p class="card-text">Time Estimate : {{criteria.TimeEstimate}}</p>
+              <p class="card-text">Date Created : {{criteria.created_at | date: 'yyyy-MM-dd'}}</p>
+              <p class="card-text">Date Updated : {{criteria.updated_at | date: 'yyyy-MM-dd'}}</p>
+            </div>
+          </div>
+    </div>
+
+</div>

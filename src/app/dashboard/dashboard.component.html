@@ -1,0 +1,22 @@
+<section id="hero" class="d-flex align-items-center" *ngIf='showDashboard'>
+    <div class="container position-relative text-center text-lg-left code code--small code--left aos-init aos-animate"
+        data-aos="zoom-in" data-aos-delay="800">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1>Welcome to Appivo's<span> Competence</span></h1>
+                <h2>The next-gen low-code platform</h2>
+            </div>
+
+            <div class="btns">
+                <a href="https://appivo.com/" class="btn-menu animated fadeInUp scrollto">Home</a>
+                <a href="https://appivo.com/about/" class="btn-book animated fadeInUp scrollto">About US</a>
+            </div>
+
+            <div>
+                <button class="box-click rotate"
+                    (click)='goToDisplayData()'>Click here</button>
+            </div>
+        </div>
+    </div>
+</section>
+<router-outlet></router-outlet>
